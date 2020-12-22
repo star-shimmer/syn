@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_game"
+        android:icon="@drawable/ic_game"
+        android:title="@string/title_game" />
+
+    <item
+        android:id="@+id/navigation_msg"
+        android:icon="@drawable/ic_msg"
+        android:title="@string/title_msg" />
+
+    <item
+        android:id="@+id/navigation_music"
+        android:icon="@drawable/ic_music"
+        android:title="@string/title_music" />
+
+    <item
+        android:id="@+id/navigation_clock"
+        android:icon="@drawable/ic_clock"
+        android:title="@string/title_clock" />
+</menu>
