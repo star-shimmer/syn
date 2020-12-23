@@ -20,11 +20,11 @@
     <fragment
         android:id="@+id/navigation_clock"
         android:name="com.example.syn.ui.clock.ClockFragment"
-        android:label="@string/title_music"
+        android:label="@string/title_clock"
         tools:layout="@layout/fragment_clock" />
     <fragment
         android:id="@+id/navigation_music"
         android:name="com.example.syn.ui.music.MusicFragment"
-        android:label="@string/title_clock"
+        android:label="@string/title_music"
         tools:layout="@layout/fragment_music" />
 </navigation>

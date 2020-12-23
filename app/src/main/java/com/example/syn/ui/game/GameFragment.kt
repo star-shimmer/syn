@@ -20,7 +20,7 @@ class GameFragment : Fragment() {
             savedInstanceState: Bundle?
     ): View? {
         gameViewModel =
-                ViewModelProviders.of(this).get(GameViewModel::class.java)
+            ViewModelProviders.of(this).get(GameViewModel::class.java)
         val root = inflater.inflate(R.layout.fragment_game, container, false)
         val textView: TextView = root.findViewById(R.id.text_home)
         gameViewModel.text.observe(viewLifecycleOwner, Observer {

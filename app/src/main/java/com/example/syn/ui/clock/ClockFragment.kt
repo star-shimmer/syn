@@ -10,6 +10,7 @@ import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
 import androidx.lifecycle.ViewModelProviders
 import com.example.syn.R
+import com.example.syn.ui.game.GameViewModel
 import kotlinx.android.synthetic.main.fragment_clock.*
 
 class ClockFragment : Fragment() {
@@ -21,9 +22,15 @@ class ClockFragment : Fragment() {
             container: ViewGroup?,
             savedInstanceState: Bundle?
     ): View? {
-        viewModel = ViewModelProvider(this, ViewModelProvider.NewInstanceFactory()).get(ClockViewModel::class.java)
+        return inflater.inflate(R.layout.fragment_clock, container, false)
+    }
 
-        viewModel.seconds.observe(this, Observer {
+    override fun onActivityCreated(savedInstanceState: Bundle?) {
+        super.onActivityCreated(savedInstanceState)
+
+        clockViewModel = ViewModelProvider(this, ViewModelProvider.NewInstanceFactory()).get(ClockViewModel::class.java)
+
+        clockViewModel.seconds.observe(viewLifecycleOwner, Observer {
             val hours = it / 3600
             val minutes = (it%3600) / 60
             val secs = it % 60
@@ -31,13 +38,14 @@ class ClockFragment : Fragment() {
         })
 
         btn_start.setOnClickListener {
-            viewModel.start()
+            clockViewModel.start()
         }
         btn_stop.setOnClickListener {
-            viewModel.stop()
+            clockViewModel.stop()
         }
         btn_restart.setOnClickListener {
-            viewModel.restart()
+            clockViewModel.restart()
         }
+
     }
 }
