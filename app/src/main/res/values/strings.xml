@@ -5,9 +5,18 @@
     <string name="title_music">Music</string>
     <string name="title_clock">Clock</string>
 
+    <!--clock-->
     <string name="timer">timer</string>
     <string name="start">start</string>
     <string name="stop">stop</string>
     <string name="restart">restart</string>
+
+    <!--music-->
+    <string name="play">play</string>
+    <string name="prevent">prevent</string>
+    <string name="pause">pause</string>
+    <string name="next">next</string>
+    <string name="loading">loading......</string>
+    <string name="show_notification">show notification</string>
 
 </resources>
