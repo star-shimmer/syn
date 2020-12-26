@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item android:state_pressed="true"
+        android:drawable="@mipmap/btn_playmode_singlerepeat_pressed"
+        android:width="25dp"
+        android:height="25dp"/>
+    <item android:drawable="@mipmap/btn_playmode_singlerepeat_normal"
+        android:width="30dp"
+        android:height="30dp"/>
+</selector>

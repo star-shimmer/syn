@@ -5,10 +5,9 @@ import com.example.syn.base.BaseFragment
 import com.example.syn.ui.fragment.HomeFragment
 import com.example.syn.ui.fragment.MusicFragment
 
-
 //管理fragment的util类
 class FragmentUtil private constructor(){//私有化构造方法
-    val homeFragment by lazy { HomeFragment() }
+val homeFragment by lazy { HomeFragment() }
     val musicFragment by lazy { MusicFragment() }
     companion object {
         //惰性加载，只有用时加载

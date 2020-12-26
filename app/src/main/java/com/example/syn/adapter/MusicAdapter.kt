@@ -15,6 +15,7 @@ class MusicAdapter(context: Context?, c: Cursor?) : CursorAdapter(context, c) {
         return MusicItemView(context)
     }
 
+
     //view+data
     override fun bindView(view: View?, context: Context?, cursor: Cursor?) {
         //view
@@ -22,8 +23,6 @@ class MusicAdapter(context: Context?, c: Cursor?) : CursorAdapter(context, c) {
         //data
         val itemBean = cursor?.let { AudioBean.getAudioBean(it) }
         //view+data
-        if (itemBean != null) {
-            itemView.setData(itemBean)
-        }
+        itemView.setData(itemBean)
     }
 }
