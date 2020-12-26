@@ -1,9 +1,11 @@
 package com.example.syn.ui.activity
 
+import android.app.Activity
 import android.os.Build
 import android.os.Bundle
 import android.widget.Toolbar
 import androidx.annotation.RequiresApi
+import androidx.core.app.ActivityCompat
 import com.example.syn.R
 import com.example.syn.base.BaseActivity
 import com.example.syn.util.FragmentUtil
@@ -26,6 +28,8 @@ class MainActivity : BaseActivity(),ToolBarManager {
     override fun initData() {
         initMainToolBar()
     }
+
+
 
     override fun initListener() {
         //设置tab切换监听
