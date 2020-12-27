@@ -42,7 +42,7 @@ class LyricView : View {
         bigSize = resources.getDimension(R.dimen.bigSize)
         smallSize = resources.getDimension(R.dimen.smallSize)
         white = resources.getColor(R.color.white)
-        green = resources.getColor(R.color.green)
+        green = resources.getColor(R.color.yellow)
         lineHeight = resources.getDimensionPixelOffset(R.dimen.lineHeight)
 
         //画笔
